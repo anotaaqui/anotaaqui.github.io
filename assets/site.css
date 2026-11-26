@@ -201,6 +201,31 @@ ul, ol { margin: 0; padding: 0; }
 
 .btn-sm { min-height: 40px; padding: 0 18px; font-size: 14px; }
 
+.soon-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 40px;
+  padding: 0 18px;
+  border: 1px dashed var(--line-strong);
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--card) 55%, transparent);
+  color: var(--muted);
+  font: 500 13px/1.2 var(--text);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+.soon-pill::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  flex: none;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 12%, transparent);
+}
+.soon-pill.lg { min-height: 50px; padding: 0 22px; font-size: 14px; }
+
 .link-arrow {
   display: inline-flex;
   align-items: center;
@@ -924,6 +949,16 @@ details.q .a {
 .cta .btn-accent:hover { --btn-bg: #fff; }
 .cta .btn-ghost { --btn-fg: var(--cream); border-color: rgba(247, 243, 234, 0.32); }
 .cta .btn-ghost:hover { --btn-bg: rgba(247, 243, 234, 0.08); }
+.cta .soon-pill {
+  background: rgba(247, 243, 234, 0.08);
+  border-color: rgba(247, 243, 234, 0.34);
+  color: rgba(247, 243, 234, 0.88);
+}
+.cta .soon-pill::before {
+  background: var(--amber);
+  box-shadow: 0 0 0 4px rgba(232, 163, 60, 0.16);
+}
+
 .cta-meta {
   display: flex;
   flex-wrap: wrap;
@@ -1059,6 +1094,10 @@ details.q .a {
   .strip { margin-top: 70px; }
   details.q summary { font-size: 15.5px; }
   details.q .a { padding-right: 8px; }
+}
+
+@media (max-width: 560px) {
+  .site-header .soon-pill { display: none; }
 }
 
 @media (prefers-reduced-motion: reduce) {
