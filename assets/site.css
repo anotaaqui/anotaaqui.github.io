@@ -226,6 +226,40 @@ ul, ol { margin: 0; padding: 0; }
 }
 .soon-pill.lg { min-height: 50px; padding: 0 22px; font-size: 14px; }
 
+/* ── marca no topo ──────────────────────────────────────────────────── */
+.brand-cover {
+  padding: 54px 0 30px;
+  text-align: center;
+}
+.brand-lockup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(10px, 1.6vw, 18px);
+}
+.brand-mark {
+  width: clamp(46px, 6.6vw, 78px);
+  height: auto;
+  flex: none;
+  filter: drop-shadow(0 12px 24px rgba(22, 20, 15, 0.16));
+}
+.brand-word {
+  font-family: var(--display);
+  font-size: clamp(40px, 8.8vw, 92px);
+  font-weight: 400;
+  line-height: 0.9;
+  letter-spacing: -0.035em;
+}
+.brand-word .dot { color: var(--accent); }
+.brand-tag {
+  margin-top: 16px;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
 /* ── manifesto ──────────────────────────────────────────────────────── */
 .manifesto {
   background: var(--ink);
