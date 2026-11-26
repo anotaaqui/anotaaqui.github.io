@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zionfm.github.io/sitemap.xml

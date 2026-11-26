@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="anota.aqui">
+  <rect width="32" height="32" rx="9" fill="#16140f"/>
+  <rect x="8" y="9" width="13" height="2" rx="1" fill="#f7f3ea"/>
+  <rect x="8" y="14.5" width="9" height="2" rx="1" fill="#f7f3ea" opacity="0.72"/>
+  <rect x="8" y="20" width="6" height="2" rx="1" fill="#f7f3ea" opacity="0.42"/>
+  <circle cx="22.5" cy="21.5" r="2.6" fill="#c4442a"/>
+</svg>
