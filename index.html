@@ -10,7 +10,7 @@
   <meta property="og:site_name" content="anota.aqui">
   <meta property="og:title" content="anota.aqui — do pedido ao Pix, sem planilha no meio">
   <meta property="og:description" content="Pedidos, cozinha, entregas e Pix em um único console, com atendimento assistido por LLM e confirmação de pagamento por declaração no chat. Sem servidor centralizado, sem assinatura e sem venda de dados. É grátis e sempre será. Código aberto sob MIT.">
-  <meta property="og:url" content="https://zionfm.github.io/">
+  <meta property="og:url" content="https://anotaaqui.github.io/">
   <meta property="og:locale" content="pt_BR">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@
     "operatingSystem": "Web, Windows, Linux, macOS",
     "inLanguage": "pt-BR",
     "description": "Console de operação para restaurantes: pedidos, cozinha, entregas, atendimento assistido por LLM, confirmação de pagamento no chat e recebimento por Pix.",
-    "url": "https://zionfm.github.io/",
+    "url": "https://anotaaqui.github.io/",
     "isAccessibleForFree": true,
     "license": "https://opensource.org/license/mit"
   }
@@ -50,6 +50,7 @@
 
       <nav class="nav" aria-label="Navegação principal">
         <a href="#produto">Produto</a>
+        <a href="#cozinha">Cozinha</a>
         <a href="#recursos">Recursos</a>
         <a href="#atendimento">Atendimento</a>
         <a href="#pagamentos">Pagamentos</a>
@@ -319,11 +320,114 @@
       </div>
     </section>
 
-    <!-- ── 02 recursos ──────────────────────────────────────────────── -->
+    <!-- ── 02 cozinha ───────────────────────────────────────────────── -->
+    <section class="section kitchen-section" id="cozinha">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="section-num">02 / Cozinha</span>
+          <h2>A cozinha ganha<br>o próprio <em>painel</em>.</h2>
+          <p>
+            Um KDS de verdade, no mesmo webapp, para a equipe da cozinha trabalhar no
+            ritmo da casa — sem depender do salão e sem planilha no meio.
+          </p>
+        </div>
+
+        <div class="kitchen-split">
+          <div class="kitchen-copy reveal">
+            <p class="kitchen-lead">
+              O mesmo padrão de operação de uma grande rede, com os dados na sua máquina.
+            </p>
+            <ul class="check-list">
+              <li>
+                <span class="ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2 5 8.5l4.5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span><strong>Novo pedido, alerta na hora.</strong> O cartão entra na coluna “Novos”, com som e cronômetro. Nada de gritar o pedido pelo salão.</span>
+              </li>
+              <li>
+                <span class="ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2 5 8.5l4.5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span><strong>Um toque por etapa.</strong> Em andamento, em preparo, pronto, saiu para entrega. O atendente e o cliente veem o status mudar.</span>
+              </li>
+              <li>
+                <span class="ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2 5 8.5l4.5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span><strong>O detalhe que faz diferença.</strong> “Sem cebola”, “bem passado”, adicional e ponto da carne aparecem no cartão e seguem para a comanda.</span>
+              </li>
+              <li>
+                <span class="ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2 5 8.5l4.5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span><strong>Papel quando precisa.</strong> A impressora térmica imprime a comanda com os mesmos itens e observações. O tablet continua comandando o fluxo.</span>
+              </li>
+              <li>
+                <span class="ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2 5 8.5l4.5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span><strong>Tablet, celular ou monitor fixo.</strong> Modo cozinha em tela cheia, com letras grandes e botões que cabem no dedo.</span>
+              </li>
+            </ul>
+            <p class="kitchen-fine">Interface ilustrativa. Os dados reais ficam no seu computador.</p>
+          </div>
+
+          <div class="kds-mock reveal" aria-hidden="true">
+            <div class="kds-head">
+              <div><b>Cozinha</b><span>operação ao vivo</span></div>
+              <span class="kds-live"><i></i>4 pedidos</span>
+            </div>
+            <div class="kds-board">
+              <div class="kds-col">
+                <h4>Novos <span>1</span></h4>
+                <article class="kds-card is-new">
+                  <header><b>#1046</b><em>2 min</em></header>
+                  <p>Maria Souza · WhatsApp</p>
+                  <ul>
+                    <li><span>1×</span> X-Burguer <small>sem cebola</small></li>
+                    <li><span>1×</span> Batata rústica</li>
+                  </ul>
+                  <footer><strong>R$ 30,90</strong><button>Iniciar</button></footer>
+                </article>
+              </div>
+              <div class="kds-col">
+                <h4>Em preparo <span>2</span></h4>
+                <article class="kds-card">
+                  <header><b>#1043</b><em>8 min</em></header>
+                  <p>João Silva · salão</p>
+                  <ul>
+                    <li><span>2×</span> Marmita frango <small>sem cebola</small></li>
+                    <li><span>1×</span> Suco de laranja</li>
+                  </ul>
+                  <footer><strong>R$ 58,00</strong><button>Pronto</button></footer>
+                </article>
+                <article class="kds-card">
+                  <header><b>#1044</b><em>12 min</em></header>
+                  <p>Ana Prado · delivery</p>
+                  <ul>
+                    <li><span>1×</span> Combo casal <small>um sem salada</small></li>
+                  </ul>
+                  <footer><strong>R$ 69,00</strong><button>Pronto</button></footer>
+                </article>
+              </div>
+              <div class="kds-col">
+                <h4>Prontos <span>1</span></h4>
+                <article class="kds-card is-ready">
+                  <header><b>#1040</b><em>pronto</em></header>
+                  <p>Carlos Lima · retirada</p>
+                  <ul>
+                    <li><span>1×</span> Açaí 500 ml</li>
+                  </ul>
+                  <footer><strong>R$ 24,00</strong><button>Despachar</button></footer>
+                </article>
+              </div>
+            </div>
+            <div class="kds-foot">
+              <span>Papel na térmica</span>
+              <span>Tablet na bancada</span>
+              <span>Celular no bolso</span>
+              <span>Tela cheia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 03 recursos ──────────────────────────────────────────────── -->
     <section class="section" id="recursos">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="section-num">02 / Recursos</span>
+          <span class="section-num">03 / Recursos</span>
           <h2>O essencial,<br>sem <em>enfeite</em>.</h2>
           <p>
             Cada parte existe para tirar uma pergunta da mesa: o que falta, quem paga,
@@ -387,7 +491,7 @@
     <section class="section-tight" id="como-funciona">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="section-num">03 / Como funciona</span>
+          <span class="section-num">04 / Como funciona</span>
           <h2>Três passos.<br>Nada de <em>implantação</em> longa.</h2>
           <p>O console roda na máquina do restaurante. Os dados ficam com você.</p>
         </div>
@@ -416,7 +520,7 @@
     <section class="section" id="atendimento">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="section-num">04 / Atendimento</span>
+          <span class="section-num">05 / Atendimento</span>
           <h2>O modelo entende a conversa.<br>Quem confirma é <em>gente</em>.</h2>
           <p>
             Um LLM lê o histórico, estrutura o pedido e prepara a resposta. A confirmação
@@ -487,7 +591,7 @@
     <section class="section" id="pagamentos" style="background:var(--cream-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="section-num">05 / Pagamentos</span>
+          <span class="section-num">06 / Pagamentos</span>
           <h2>Pix na conta<br>do <em>restaurante</em>.</h2>
           <p>
             O anota.aqui é o software de gestão. O dinheiro não passa por nós:
@@ -510,7 +614,7 @@
                 </li>
                 <li>
                   <span class="ico">2</span>
-                  <span>Cliente paga<div class="meta">QR Code ou copia e cola</span></span>
+                  <span>Cliente paga<div class="meta">QR Code ou copia e cola</div></span>
                   <span class="val">Pix</span>
                 </li>
                 <li>
@@ -580,7 +684,7 @@
     <section class="section-tight" id="perguntas">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="section-num">06 / Perguntas</span>
+          <span class="section-num">07 / Perguntas</span>
           <h2>O que dá para<br>saber <em>hoje</em>.</h2>
           <p>Mais detalhes serão publicados junto com o repositório.</p>
         </div>
@@ -680,7 +784,7 @@
         <div class="footer-col">
           <h4>Código</h4>
           <ul>
-            <li><span class="muted-2">Repositório público em breve</span></li>
+            <li><a href="https://github.com/anotaaqui/anota.aqui">github.com/anotaaqui/anota.aqui</a></li>
             <li><a href="#perguntas">Perguntas frequentes</a></li>
           </ul>
         </div>
