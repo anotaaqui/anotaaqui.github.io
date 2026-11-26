@@ -3,7 +3,7 @@
 Site institucional estático do anota.aqui, publicado no GitHub Pages.
 
 - `index.html` — página principal
-- `termos.html` — termos de uso
+- `licenca.html` — licença MIT
 - `privacidade.html` — política de privacidade (LGPD)
 - `assets/site.css` — sistema visual completo
 - `robots.txt`, `sitemap.xml`
