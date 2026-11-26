@@ -263,6 +263,13 @@ ul, ol { margin: 0; padding: 0; }
   padding-top: 8px;
   max-width: 62ch;
 }
+.manifesto-notes p.manifesto-free {
+  font-family: var(--display);
+  font-size: clamp(22px, 2.4vw, 30px);
+  line-height: 1.15;
+  color: var(--amber);
+  margin-bottom: 4px;
+}
 .manifesto-notes p {
   font-size: 13.5px;
   line-height: 1.65;
