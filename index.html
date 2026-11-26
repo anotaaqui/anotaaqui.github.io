@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>anota.aqui — a operação do seu restaurante, do pedido ao Pix</title>
-  <meta name="description" content="anota.aqui organiza pedidos, cozinha, entregas e recebimento por Pix em um só console. WhatsApp assistido, sem robô respondendo no seu lugar. Código aberto sob MIT.">
+  <meta name="description" content="anota.aqui organiza pedidos, cozinha, entregas e recebimento por Pix em um só console, com atendimento assistido por LLM e confirmação de pagamento no chat. Código aberto sob MIT.">
   <meta name="theme-color" content="#f7f3ea">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="anota.aqui">
   <meta property="og:title" content="anota.aqui — do pedido ao Pix, sem planilha no meio">
-  <meta property="og:description" content="Pedidos, cozinha, entregas e Pix em um único console. Feito para restaurantes que atendem no salão, no balcão e no WhatsApp. Código aberto sob MIT.">
+  <meta property="og:description" content="Pedidos, cozinha, entregas e Pix em um único console, com atendimento assistido por LLM e confirmação de pagamento por declaração no chat. Código aberto sob MIT.">
   <meta property="og:url" content="https://zionfm.github.io/">
   <meta property="og:locale" content="pt_BR">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
@@ -25,7 +25,7 @@
     "applicationCategory": "BusinessApplication",
     "operatingSystem": "Web, Windows, Linux, macOS",
     "inLanguage": "pt-BR",
-    "description": "Console de operação para restaurantes: pedidos, cozinha, entregas, mensagens assistidas no WhatsApp e recebimento por Pix.",
+    "description": "Console de operação para restaurantes: pedidos, cozinha, entregas, atendimento assistido por LLM, confirmação de pagamento no chat e recebimento por Pix.",
     "url": "https://zionfm.github.io/",
     "isAccessibleForFree": true,
     "license": "https://opensource.org/license/mit"
@@ -51,6 +51,7 @@
       <nav class="nav" aria-label="Navegação principal">
         <a href="#produto">Produto</a>
         <a href="#recursos">Recursos</a>
+        <a href="#atendimento">Atendimento</a>
         <a href="#pagamentos">Pagamentos</a>
         <a href="#perguntas">Perguntas</a>
       </nav>
@@ -189,12 +190,14 @@
           <span>Pix conciliado</span>
           <span>WhatsApp assistido</span>
           <span>Cardápio sempre atual</span>
+          <span>LLM com revisão humana</span>
           <span>Código aberto sob MIT</span>
           <span>Pedidos sem retrabalho</span>
           <span>Cozinha em tempo real</span>
           <span>Pix conciliado</span>
           <span>WhatsApp assistido</span>
           <span>Cardápio sempre atual</span>
+          <span>LLM com revisão humana</span>
           <span>Código aberto sob MIT</span>
         </div>
       </div>
@@ -323,6 +326,18 @@
             <h3>Histórico que explica</h3>
             <p>Quem mudou o quê e quando. Útil no fechamento, na auditoria e na conversa com o cliente.</p>
           </article>
+
+          <article class="feature reveal">
+            <span class="ic"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 5.5h12v8H9l-4 3v-3H4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M10 7.2l.8 1.9 1.9.8-1.9.8-.8 1.9-.8-1.9-1.9-.8 1.9-.8z" fill="currentColor"/></svg></span>
+            <h3>Atendimento com LLM</h3>
+            <p>A conversa vira pedido estruturado. O modelo lê o histórico, propõe respostas e reconhece a declaração de pagamento do atendente.</p>
+          </article>
+
+          <article class="feature reveal">
+            <span class="ic"><svg width="17" height="17" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6 3h8v14l-2-1.5-2 1.5-2-1.5L6 17z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M8.5 7h3M8.5 10h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></span>
+            <h3>Gastos categorizados</h3>
+            <p>Saídas do Mercado Pago e lançamentos manuais por categoria, fornecedor e tipo de pessoa. CNPJ sem categoria fica em evidência.</p>
+          </article>
         </div>
       </div>
     </section>
@@ -350,17 +365,88 @@
           <div class="step reveal">
             <span class="n">03</span>
             <h3>Atenda</h3>
-            <p>Pedido entra, cozinha vê, Pix confirma, cliente acompanha. Tudo no mesmo console.</p>
+            <p>Pedido entra, cozinha vê, pagamento é confirmado, cliente acompanha. O LLM organiza a conversa; você confirma.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ── 04 pagamentos ────────────────────────────────────────────── -->
+    <!-- ── 04 atendimento ───────────────────────────────────────────── -->
+    <section class="section" id="atendimento">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="section-num">04 / Atendimento</span>
+          <h2>O modelo entende a conversa.<br>Quem confirma é <em>gente</em>.</h2>
+          <p>
+            Um LLM lê o histórico, estrutura o pedido e prepara a resposta. A confirmação
+            de pagamento continua humana — e registrada.
+          </p>
+        </div>
+
+        <div class="split">
+          <div class="reveal">
+            <h3 style="font-family:var(--display);font-size:clamp(28px,3vw,40px);line-height:1.05;letter-spacing:-.02em;">
+              “Recebi o Pix” vira<br>evento auditável.
+            </h3>
+            <p style="margin-top:18px;color:var(--muted);font-size:16px;max-width:46ch;">
+              No modo manual, o atendente autorizado declara o recebimento na conversa.
+              O modelo reconhece a declaração, registra autor, horário e mensagem, e libera
+              o pedido para a cozinha. O cliente dizendo “paguei” não basta.
+            </p>
+            <ul class="check-list">
+              <li>
+                <span class="ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2 5 8.5l4.5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span><strong>Interação assistida.</strong> O modelo organiza itens, tira dúvidas do cardápio e resume a conversa para o atendente.</span>
+              </li>
+              <li>
+                <span class="ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2 5 8.5l4.5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span><strong>Só admin declara.</strong> A confirmação exige uma pessoa na lista de autorizados e fica no histórico do pedido.</span>
+              </li>
+              <li>
+                <span class="ck"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M2.5 6.2 5 8.5l4.5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span><strong>Mercado Pago desliga a declaração.</strong> Nesse modo, só o Pix aprovado pela API libera o pedido. A regra vive no banco.</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="reveal">
+            <div class="chat-demo" aria-label="Exemplo de conversa com declaração de pagamento">
+              <div class="chat-head">
+                <span>WhatsApp · Maria Souza</span>
+                <span class="chat-live">assistido</span>
+              </div>
+              <div class="chat-body">
+                <div class="chat-msg in">
+                  <span>Cliente</span>
+                  <p>Fiz o Pix de R$ 69,00 agora.</p>
+                  <time>14:31</time>
+                </div>
+                <div class="chat-msg out">
+                  <span>Ana · atendente</span>
+                  <p>Recebi sim, obrigada! Seu pedido já entrou na cozinha.</p>
+                  <time>14:32</time>
+                </div>
+                <div class="chat-event">
+                  <strong>Pagamento declarado</strong>
+                  <span>Ana · 14:32 · declaração registrada</span>
+                </div>
+                <div class="chat-event ok">
+                  <strong>Pedido #1042 liberado</strong>
+                  <span>cozinha avisada · cliente notificado</span>
+                </div>
+              </div>
+              <div class="chat-foot">O rascunho é seu. O envio é seu. O registro fica.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 05 pagamentos ────────────────────────────────────────────── -->
     <section class="section" id="pagamentos" style="background:var(--cream-deep);border-top:1px solid var(--line);border-bottom:1px solid var(--line);">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="section-num">04 / Pagamentos</span>
+          <span class="section-num">05 / Pagamentos</span>
           <h2>Pix na conta<br>do <em>restaurante</em>.</h2>
           <p>
             O anota.aqui é o software de gestão. O dinheiro não passa por nós:
@@ -433,14 +519,27 @@
             </div>
           </div>
         </div>
+
+        <div class="modes">
+          <div class="mode reveal">
+            <span class="mode-tag">Modo manual</span>
+            <h4>Declaração no chat</h4>
+            <p>Um atendente autorizado declara o recebimento. O LLM registra a evidência e o pedido avança. O cliente dizendo “paguei” não basta.</p>
+          </div>
+          <div class="mode reveal">
+            <span class="mode-tag">Modo Mercado Pago</span>
+            <h4>Confirmação pela API</h4>
+            <p>A declaração é desligada no banco. Só o Pix aprovado pela API do Mercado Pago libera o pedido.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <!-- ── 05 perguntas ─────────────────────────────────────────────── -->
+    <!-- ── 06 perguntas ─────────────────────────────────────────────── -->
     <section class="section-tight" id="perguntas">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="section-num">05 / Perguntas</span>
+          <span class="section-num">06 / Perguntas</span>
           <h2>O que costumam<br>perguntar <em>antes</em>.</h2>
           <p>Mais detalhes serão publicados junto com o repositório.</p>
         </div>
@@ -449,6 +548,10 @@
           <details class="q">
             <summary>O anota.aqui envia mensagens sozinho no WhatsApp?<span class="sign"></span></summary>
             <div class="a">Não. O sistema prepara a mensagem no tom da casa e a coloca na caixa de saída. Uma pessoa revisa, envia e confirma. Isso evita bloqueio da conta e mantém o atendimento humano.</div>
+          </details>
+          <details class="q">
+            <summary>O LLM confirma pagamento sozinho?<span class="sign"></span></summary>
+            <div class="a">Não. No modo manual, só um atendente autorizado pode declarar o recebimento, e a declaração fica registrada com autor, horário e mensagem. No modo Mercado Pago a declaração é desligada: apenas a API confirma. O modelo também nunca envia mensagem — ele prepara o rascunho e a pessoa envia.</div>
           </details>
           <details class="q">
             <summary>O dinheiro do Pix passa pelo anota.aqui?<span class="sign"></span></summary>
