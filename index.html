@@ -4,12 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>anota.aqui — a operação do seu restaurante, do pedido ao Pix</title>
-  <meta name="description" content="anota.aqui organiza pedidos, cozinha, entregas e recebimento por Pix em um só console. WhatsApp assistido, sem robô respondendo no seu lugar.">
+  <meta name="description" content="anota.aqui organiza pedidos, cozinha, entregas e recebimento por Pix em um só console. WhatsApp assistido, sem robô respondendo no seu lugar. Código aberto sob MIT.">
   <meta name="theme-color" content="#f7f3ea">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="anota.aqui">
   <meta property="og:title" content="anota.aqui — do pedido ao Pix, sem planilha no meio">
-  <meta property="og:description" content="Pedidos, cozinha, entregas e Pix em um único console. Feito para restaurantes que atendem no salão, no balcão e no WhatsApp.">
+  <meta property="og:description" content="Pedidos, cozinha, entregas e Pix em um único console. Feito para restaurantes que atendem no salão, no balcão e no WhatsApp. Código aberto sob MIT.">
   <meta property="og:url" content="https://zionfm.github.io/">
   <meta property="og:locale" content="pt_BR">
   <link rel="icon" href="assets/mark.svg" type="image/svg+xml">
@@ -27,11 +27,8 @@
     "inLanguage": "pt-BR",
     "description": "Console de operação para restaurantes: pedidos, cozinha, entregas, mensagens assistidas no WhatsApp e recebimento por Pix.",
     "url": "https://zionfm.github.io/",
-    "offers": [
-      { "@type": "Offer", "name": "Balcão", "price": "0", "priceCurrency": "BRL" },
-      { "@type": "Offer", "name": "Salão", "price": "189", "priceCurrency": "BRL" },
-      { "@type": "Offer", "name": "Rede", "price": "449", "priceCurrency": "BRL" }
-    ]
+    "isAccessibleForFree": true,
+    "license": "https://opensource.org/license/mit"
   }
   </script>
 </head>
@@ -55,7 +52,6 @@
         <a href="#produto">Produto</a>
         <a href="#recursos">Recursos</a>
         <a href="#pagamentos">Pagamentos</a>
-        <a href="#planos">Planos</a>
         <a href="#perguntas">Perguntas</a>
       </nav>
 
@@ -82,6 +78,7 @@
             <li><strong>Um console</strong>salão, balcão e delivery</li>
             <li><strong>Pix em segundos</strong>confirmação automática</li>
             <li><strong>Sem robô</strong>mensagens assistidas</li>
+            <li><strong>Código aberto</strong>MIT, self-hosted</li>
           </ul>
         </div>
 
@@ -192,11 +189,13 @@
           <span>Pix conciliado</span>
           <span>WhatsApp assistido</span>
           <span>Cardápio sempre atual</span>
+          <span>Código aberto sob MIT</span>
           <span>Pedidos sem retrabalho</span>
           <span>Cozinha em tempo real</span>
           <span>Pix conciliado</span>
           <span>WhatsApp assistido</span>
           <span>Cardápio sempre atual</span>
+          <span>Código aberto sob MIT</span>
         </div>
       </div>
     </section>
@@ -437,64 +436,11 @@
       </div>
     </section>
 
-    <!-- ── 05 planos ────────────────────────────────────────────────── -->
-    <section class="section" id="planos">
-      <div class="wrap">
-        <div class="section-head reveal">
-          <span class="section-num">05 / Planos</span>
-          <h2>Preço fixo.<br>Sem taxa por <em>pedido</em>.</h2>
-          <p>Você paga pelo console, não pelo movimento. O Pix tem apenas a taxa do Mercado Pago.</p>
-        </div>
-
-        <div class="plans">
-          <article class="plan reveal">
-            <span class="plan-name">Balcão</span>
-            <div class="price">R$ 0<small> / mês</small></div>
-            <p class="plan-lead">Para começar com um terminal e um cardápio.</p>
-            <ul class="plan-list">
-              <li><span class="ck">✓</span> 1 terminal</li>
-              <li><span class="ck">✓</span> Pedidos e cozinha</li>
-              <li><span class="ck">✓</span> Cardápio e disponibilidade</li>
-              <li><span class="ck">✓</span> Histórico de 30 dias</li>
-            </ul>
-          </article>
-
-          <article class="plan featured reveal">
-            <span class="badge">Mais usado</span>
-            <span class="plan-name">Salão</span>
-            <div class="price">R$ 189<small> / mês</small></div>
-            <p class="plan-lead">Para quem atende salão, balcão e delivery ao mesmo tempo.</p>
-            <ul class="plan-list">
-              <li><span class="ck">✓</span> Até 3 terminais</li>
-              <li><span class="ck">✓</span> Pix com conciliação automática</li>
-              <li><span class="ck">✓</span> WhatsApp assistido</li>
-              <li><span class="ck">✓</span> Página de acompanhamento</li>
-              <li><span class="ck">✓</span> Histórico completo</li>
-            </ul>
-          </article>
-
-          <article class="plan reveal">
-            <span class="plan-name">Rede</span>
-            <div class="price">R$ 449<small> / mês</small></div>
-            <p class="plan-lead">Para operações com mais de uma unidade.</p>
-            <ul class="plan-list">
-              <li><span class="ck">✓</span> Terminais ilimitados</li>
-              <li><span class="ck">✓</span> Visão consolidada por unidade</li>
-              <li><span class="ck">✓</span> Permissões por função</li>
-              <li><span class="ck">✓</span> Exportação de fechamento</li>
-              <li><span class="ck">✓</span> Suporte prioritário</li>
-            </ul>
-          </article>
-        </div>
-        <p class="pricing-note">Planos de referência. A contratação abre junto com o repositório público, em breve. Valores em reais, por estabelecimento.</p>
-      </div>
-    </section>
-
-    <!-- ── 06 perguntas ─────────────────────────────────────────────── -->
+    <!-- ── 05 perguntas ─────────────────────────────────────────────── -->
     <section class="section-tight" id="perguntas">
       <div class="wrap">
         <div class="section-head reveal">
-          <span class="section-num">06 / Perguntas</span>
+          <span class="section-num">05 / Perguntas</span>
           <h2>O que costumam<br>perguntar <em>antes</em>.</h2>
           <p>Mais detalhes serão publicados junto com o repositório.</p>
         </div>
@@ -521,8 +467,8 @@
             <div class="a">Ficam na máquina do restaurante, em um banco local. O acesso é restrito à sua rede. Você pode exportar e apagar os dados quando quiser. Veja a <a href="privacidade.html">Política de Privacidade</a>.</div>
           </details>
           <details class="q">
-            <summary>Como faço para cancelar?<span class="sign"></span></summary>
-            <div class="a">Basta pedir o encerramento por e-mail. A cobrança da assinatura para no ciclo seguinte e você mantém acesso aos dados por 30 dias para exportação.</div>
+            <summary>É gratuito? Qual é a licença?<span class="sign"></span></summary>
+            <div class="a">Sim. O código é aberto sob a licença MIT e roda na sua infraestrutura. Não há assinatura do anota.aqui: você paga apenas os serviços que usar, como Mercado Pago, hospedagem ou WhatsApp. Contribuições serão bem-vindas quando o repositório abrir.</div>
           </details>
         </div>
       </div>
@@ -532,7 +478,7 @@
     <section class="section" id="contato">
       <div class="wrap">
         <div class="cta reveal">
-          <h2>O código estará<br>aberto em breve.</h2>
+          <h2>O código estará <br>aberto em breve.</h2>
           <p>
             Estamos preparando o repositório público com o console, o companion e a
             documentação. Sem formulário, sem lista de espera: quando abrir, você clona
@@ -575,7 +521,6 @@
             <li><a href="#produto">Visão geral</a></li>
             <li><a href="#recursos">Recursos</a></li>
             <li><a href="#pagamentos">Pagamentos</a></li>
-            <li><a href="#planos">Planos</a></li>
           </ul>
         </div>
 
