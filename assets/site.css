@@ -1159,7 +1159,6 @@ details.q .a {
 
 @media (max-width: 1040px) {
   .hero-grid { grid-template-columns: 1fr; gap: 56px; }
-  .manifesto-inner { grid-template-columns: 1fr; gap: 28px; }
   .mock { transform: none; max-width: 720px; }
   .mock-toast { transform: none; right: 12px; bottom: -24px; }
   .section-head { grid-template-columns: 1fr; gap: 12px; }
@@ -1182,6 +1181,7 @@ details.q .a {
   .header-inner { height: 66px; }
   .hero { padding-top: 46px; }
   .manifesto { padding: 42px 0; }
+  .manifesto-inner { grid-template-columns: 1fr; gap: 26px; }
   h1.display { font-size: clamp(38px, 10vw, 54px); }
   .mock-body { grid-template-columns: 1fr 112px; min-height: 0; }
   .mock-side { display: none; }
