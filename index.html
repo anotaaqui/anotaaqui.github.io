@@ -51,6 +51,7 @@
       <nav class="nav" aria-label="Navegação principal">
         <a href="#produto">Produto</a>
         <a href="#jornada">Jornada</a>
+        <a href="#videos">Vídeos</a>
         <a href="#cozinha">Cozinha</a>
         <a href="#recursos">Recursos</a>
         <a href="#atendimento">Atendimento</a>
@@ -112,8 +113,8 @@
             Com LLM ou sem, com Mercado Pago ou sem: o fluxo inteiro continua completo.
           </p>
           <div class="hero-actions">
-            <a class="btn" href="#jornada">Ver a jornada</a>
-            <a class="btn btn-ghost" href="#recursos">Ver recursos</a>
+            <a class="btn" href="#videos">Ver em vídeo</a>
+            <a class="btn btn-ghost" href="#jornada">Ver a jornada</a>
           </div>
           <ul class="hero-facts">
             <li><strong>Completo</strong>com ou sem LLM</li>
@@ -231,6 +232,7 @@
           <span>Completo com ou sem LLM</span>
           <span>Pix com ou sem Mercado Pago</span>
           <span>Do WhatsApp ao pós-venda</span>
+          <span>Jornada em vídeo · 6 episódios</span>
           <span>Endereço, referência e acesso</span>
           <span>Cozinha em tempo real</span>
           <span>Pós-venda e retenção</span>
@@ -239,6 +241,7 @@
           <span>Completo com ou sem LLM</span>
           <span>Pix com ou sem Mercado Pago</span>
           <span>Do WhatsApp ao pós-venda</span>
+          <span>Jornada em vídeo · 6 episódios</span>
           <span>Endereço, referência e acesso</span>
           <span>Cozinha em tempo real</span>
           <span>Pós-venda e retenção</span>
@@ -369,6 +372,157 @@
             <h3>Depois da entrega</h3>
             <p>Fatura baixada, pós-venda, cancelamento com tentativa de retenção, encerramento e indicadores do turno.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── jornada em vídeo ─────────────────────────────────────────── -->
+    <section class="section video-section" id="videos">
+      <div class="wrap">
+        <div class="section-head reveal">
+          <span class="section-num">Vídeos</span>
+          <h2>A jornada<br>em <em>movimento</em>.</h2>
+          <p>
+            Sete vídeos gravados no console real: a jornada completa em 1:42 e seis
+            episódios por etapa. Cursor e legenda no vídeo, dados simulados, 60 fps,
+            sem áudio.
+          </p>
+        </div>
+
+        <div class="video-layout reveal">
+          <div class="video-stage">
+            <div class="video-frame">
+              <video
+                id="video-player"
+                controls
+                playsinline
+                preload="metadata"
+                poster="assets/videos/jornada-completa.jpg"
+                aria-label="Vídeo: Jornada completa">
+                <source src="assets/videos/jornada-completa.mp4" type="video/mp4">
+                Seu navegador não reproduz vídeo em MP4.
+                <a href="assets/videos/jornada-completa.mp4">Baixar a jornada completa</a>.
+              </video>
+            </div>
+            <div class="video-meta">
+              <span class="video-count" id="video-count">Jornada completa · 1:42</span>
+              <h3 id="video-title">Jornada completa</h3>
+              <p id="video-desc">
+                Da primeira mensagem da cliente à entrega: atendimento, pedido, Pix no
+                modal, cozinha, mapa, pós-venda e os temas da caixa de saída.
+              </p>
+              <span class="video-note">Console real · legenda no vídeo · 60 fps · sem áudio</span>
+            </div>
+          </div>
+
+          <ol class="video-list" id="video-list">
+            <li>
+              <button type="button" class="video-item is-feature is-active"
+                data-src="assets/videos/jornada-completa.mp4"
+                data-poster="assets/videos/jornada-completa.jpg"
+                data-count="Jornada completa · 1:42"
+                data-title="Jornada completa"
+                data-desc="Da primeira mensagem da cliente à entrega: atendimento, pedido, Pix no modal, cozinha, mapa, pós-venda e os temas da caixa de saída.">
+                <span class="vi-num">▶</span>
+                <span class="vi-body">
+                  <strong>Jornada completa</strong>
+                  <span>Da primeira mensagem à entrega</span>
+                </span>
+                <span class="vi-time">1:42</span>
+              </button>
+            </li>
+            <li class="video-sep">Episódios</li>
+            <li>
+              <button type="button" class="video-item"
+                data-src="assets/videos/01-atendimento-inicial.mp4"
+                data-poster="assets/videos/01-atendimento-inicial.jpg"
+                data-count="Episódio 01 / 06 · 23 s"
+                data-title="Atendimento inicial"
+                data-desc="A conversa chega no WhatsApp, o console reconhece a saudação, envia o cardápio, monta a resposta e organiza o pedido com itens, endereço e total.">
+                <span class="vi-num">01</span>
+                <span class="vi-body">
+                  <strong>Atendimento inicial</strong>
+                  <span>Do primeiro “boa noite” ao pedido montado</span>
+                </span>
+                <span class="vi-time">23 s</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="video-item"
+                data-src="assets/videos/02-pedido-e-endereco.mp4"
+                data-poster="assets/videos/02-pedido-e-endereco.jpg"
+                data-count="Episódio 02 / 06 · 14 s"
+                data-title="Pedido e endereço"
+                data-desc="O pedido #1043 tem estado, dono e histórico. Itens, observações, taxa de entrega, endereço, ponto de referência e instrução de subida ficam no cartão antes de a cozinha começar.">
+                <span class="vi-num">02</span>
+                <span class="vi-body">
+                  <strong>Pedido e endereço</strong>
+                  <span>Itens, taxa, referência e acesso</span>
+                </span>
+                <span class="vi-time">14 s</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="video-item"
+                data-src="assets/videos/03-pagamento-automatico.mp4"
+                data-poster="assets/videos/03-pagamento-automatico.jpg"
+                data-count="Episódio 03 / 06 · 21 s"
+                data-title="Confirmação de pagamento"
+                data-desc="O Pix de R$ 33,90 cai na conta do restaurante, a notificação abre o recibo no modal e o pedido #1043 segue liberado para a cozinha.">
+                <span class="vi-num">03</span>
+                <span class="vi-body">
+                  <strong>Confirmação de pagamento</strong>
+                  <span>Pix no modal, pedido liberado</span>
+                </span>
+                <span class="vi-time">21 s</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="video-item"
+                data-src="assets/videos/04-cozinha-em-tempo-real.mp4"
+                data-poster="assets/videos/04-cozinha-em-tempo-real.jpg"
+                data-count="Episódio 04 / 06 · 9 s"
+                data-title="Cozinha em tempo real"
+                data-desc="O KDS mostra os pedidos por etapa e por tempo. O #1043 sai de “Em preparo” para “Prontos” com um clique, e o cliente é avisado.">
+                <span class="vi-num">04</span>
+                <span class="vi-body">
+                  <strong>Cozinha em tempo real</strong>
+                  <span>Um toque marca pronto</span>
+                </span>
+                <span class="vi-time">9 s</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="video-item"
+                data-src="assets/videos/05-entrega-e-mapa.mp4"
+                data-poster="assets/videos/05-entrega-e-mapa.jpg"
+                data-count="Episódio 05 / 06 · 19 s"
+                data-title="Entrega e mapa"
+                data-desc="O pedido é despachado, o endereço vira ponto no mapa e o cliente acompanha o status de “saiu para entrega” até a porta.">
+                <span class="vi-num">05</span>
+                <span class="vi-body">
+                  <strong>Entrega e mapa</strong>
+                  <span>Despachado, no mapa, cliente informado</span>
+                </span>
+                <span class="vi-time">19 s</span>
+              </button>
+            </li>
+            <li>
+              <button type="button" class="video-item"
+                data-src="assets/videos/06-pos-venda.mp4"
+                data-poster="assets/videos/06-pos-venda.jpg"
+                data-count="Episódio 06 / 06 · 27 s"
+                data-title="Pós-venda"
+                data-desc="A entrega é concluída no cartão do pedido, o aviso de pós-venda entra na caixa de saída e os temas organizam a fila: produção, entrega e pós-venda.">
+                <span class="vi-num">06</span>
+                <span class="vi-body">
+                  <strong>Pós-venda</strong>
+                  <span>Entrega concluída e temas da caixa de saída</span>
+                </span>
+                <span class="vi-time">27 s</span>
+              </button>
+            </li>
+          </ol>
         </div>
       </div>
     </section>
@@ -700,7 +854,7 @@
                   <span>cozinha avisada · cliente notificado</span>
                 </div>
               </div>
-              <div class="chat-foot">Conversa ilustrativa. O rascunho é seu. O envio é seu. O registro fica.</div>
+              <div class="chat-foot">Conversa ilustrativa. O registro fica.</div>
             </div>
           </div>
         </div>
@@ -819,7 +973,7 @@
         <div class="faq reveal">
           <details class="q">
             <summary>O anota.aqui envia mensagens sozinho no WhatsApp?<span class="sign"></span></summary>
-            <div class="a">Por padrão, não. O sistema prepara a mensagem no tom da casa e coloca na caixa de saída; uma pessoa revisa e envia. Se você ligar o envio automático no console, ele envia sob sua responsabilidade — o toggle vem desligado. O modo assistido funciona com ou sem LLM.</div>
+            <div class="a">Depende da configuração. O console pode preparar a resposta para revisão ou enviar automaticamente pelo WhatsApp, conforme o toggle de resposta automática. O envio usa a sua conta do WhatsApp e fica sob sua responsabilidade. Com ou sem LLM, o fluxo por trás é o mesmo.</div>
           </details>
           <details class="q">
             <summary>O LLM confirma pagamento sozinho?<span class="sign"></span></summary>
@@ -909,6 +1063,7 @@
           <h4>Produto</h4>
           <ul>
             <li><a href="#produto">Visão geral</a></li>
+            <li><a href="#videos">Vídeos da jornada</a></li>
             <li><a href="#recursos">Recursos</a></li>
             <li><a href="#pagamentos">Pagamentos</a></li>
           </ul>
@@ -966,6 +1121,32 @@
 
     // ano corrente
     document.getElementById('ano').textContent = new Date().getFullYear();
+
+    // vídeos da jornada
+    const player = document.getElementById('video-player');
+    const videoItems = [...document.querySelectorAll('.video-item')];
+    const videoCount = document.getElementById('video-count');
+    const videoTitle = document.getElementById('video-title');
+    const videoDesc = document.getElementById('video-desc');
+
+    videoItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        if (item.classList.contains('is-active')) {
+          const resume = player.play();
+          if (resume) resume.catch(() => {});
+          return;
+        }
+        videoItems.forEach((node) => node.classList.toggle('is-active', node === item));
+        player.poster = item.dataset.poster;
+        player.src = item.dataset.src;
+        player.load();
+        const started = player.play();
+        if (started) started.catch(() => {});
+        videoCount.textContent = item.dataset.count;
+        videoTitle.textContent = item.dataset.title;
+        videoDesc.textContent = item.dataset.desc;
+      });
+    });
   </script>
 </body>
 </html>

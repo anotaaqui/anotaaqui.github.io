@@ -1208,6 +1208,15 @@ details.q .a {
   .feature-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
 
+@media (max-width: 1120px) {
+  .site-header .soon-pill { display: none; }
+  .nav { gap: 20px; font-size: 14px; }
+}
+
+@media (max-width: 960px) {
+  .nav { display: none; }
+}
+
 @media (max-width: 1040px) {
   .hero-grid { grid-template-columns: 1fr; gap: 56px; }
   .mock { transform: none; max-width: 720px; }
@@ -1387,4 +1396,141 @@ details.q .a {
 }
 @media (max-width: 640px) {
   .kds-board { grid-template-columns: 1fr; }
+}
+
+/* ── jornada em vídeo ──────────────────────────────────────────────────── */
+.video-section {
+  background: var(--cream-deep);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+.video-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+  gap: clamp(26px, 3.6vw, 48px);
+  align-items: start;
+}
+.video-stage { display: grid; gap: 18px; }
+.video-frame {
+  position: relative;
+  aspect-ratio: 1360 / 768;
+  border: 1px solid var(--line-strong);
+  border-radius: 16px;
+  overflow: hidden;
+  background: var(--ink);
+  box-shadow: var(--shadow-lg);
+}
+.video-frame video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--ink);
+}
+.video-meta { display: grid; gap: 7px; }
+.video-meta .video-count {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+}
+.video-meta h3 {
+  font-family: var(--display);
+  font-size: clamp(24px, 2.4vw, 32px);
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+.video-meta p {
+  margin: 0;
+  max-width: 62ch;
+  font-size: 14.5px;
+  color: var(--muted);
+  line-height: 1.6;
+}
+.video-meta .video-note {
+  margin-top: 2px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--muted) 82%, transparent);
+}
+.video-list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid var(--line-strong);
+}
+.video-list li { margin: 0; }
+.video-item {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 30px minmax(0, 1fr) auto;
+  gap: 12px;
+  align-items: center;
+  padding: 14px 14px 14px 8px;
+  border: 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink);
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.25s var(--ease), color 0.25s var(--ease);
+}
+.video-item:hover { background: color-mix(in srgb, var(--card) 75%, transparent); }
+.video-item:focus-visible { outline: 2px solid var(--accent); outline-offset: -2px; }
+.video-item .vi-num {
+  font-family: var(--mono);
+  font-size: 11px;
+  color: var(--accent);
+}
+.video-item .vi-body strong {
+  display: block;
+  font-size: 14.5px;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+.video-item .vi-body span {
+  display: block;
+  margin-top: 2px;
+  font-size: 12.5px;
+  line-height: 1.45;
+  color: var(--muted);
+}
+.video-item .vi-time {
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--muted);
+}
+.video-item.is-active { background: var(--ink); color: var(--cream); }
+.video-item.is-active .vi-body strong { color: var(--cream); }
+.video-item.is-active .vi-num,
+.video-item.is-active .vi-body span,
+.video-item.is-active .vi-time { color: rgba(247, 243, 234, 0.6); }
+.video-item.is-active .vi-num { color: #e0704f; }
+
+.video-item.is-feature { background: color-mix(in srgb, var(--accent) 7%, transparent); }
+.video-item.is-feature .vi-body strong { color: var(--accent-deep); }
+.video-item.is-feature .vi-num { font-size: 10px; }
+.video-item.is-feature:hover { background: color-mix(in srgb, var(--accent) 12%, transparent); }
+.video-item.is-feature.is-active { background: var(--ink); }
+.video-item.is-feature.is-active .vi-body strong { color: var(--cream); }
+
+.video-sep {
+  padding: 14px 8px 8px;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+@media (max-width: 1040px) {
+  .video-layout { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  .video-item { grid-template-columns: 26px minmax(0, 1fr); padding-right: 10px; }
+  .video-item .vi-time { display: none; }
 }
